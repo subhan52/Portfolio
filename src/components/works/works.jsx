@@ -1,7 +1,7 @@
 import React from 'react';
-import './works';
-function works() {
-  return <div className='work'>works</div>;
+import './Works.scss';
+function Works() {
+  return <div className='works'>works</div>;
 }
 
-export default works;
+export default Works;

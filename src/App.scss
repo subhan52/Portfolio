@@ -1,0 +1,29 @@
+.App{
+    height: 100vh;
+    
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: antiquewhite;
+        // make it realtive and start after 70px
+        position: relative;
+        top: 70px;
+        // scrolling behavior snap type
+        scroll-snap-type: y mandatory;
+        // scrollbar hide
+        scrollbar-width: none;//for firefox
+        &::-webkit-scrollbar{
+            display: none;//for chrome and edge
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+
+        }
+
+         
+    }
+    
+}
